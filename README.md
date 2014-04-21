@@ -1,2 +1,1 @@
-wdi_1_git_demo
-==============
+# Git and GitHub Demo
