@@ -1,5 +1,7 @@
 # Git and GitHub Demo
 
+[This site can be useful to visualize some of these commands.](http://www.wei-wang.com/ExplainGitWithD3/#)
+
 ### `git init`
 
 Initializes a brand new Git repository in your current directory. This repo contains no commits and all existing files in the directory will be *untracked*.
