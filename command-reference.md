@@ -1,4 +1,4 @@
-# Git and GitHub Demo
+# Git Command Reference
 
 [This site can be useful to visualize some of these commands.](http://www.wei-wang.com/ExplainGitWithD3/#)
 
@@ -18,13 +18,21 @@ Copies a repository from GitHub to your local machine. Creates a directory *with
 
 Adds all changes within the specified files to the **staging area**, or adds entire files to the staging area if they are new to the repository. Changes in the staging area will be recorded as part of your next commit.
 
+### `git add -A`
+
+**Use sparingly.** Syncs all changes from your hard drive to the staging area, including any new/moved/deleted files or directories. It's easy to create bad commits this way &ndash; use this only if you're positive that *all* of your current changes should go into the next commit.
+
+### `git add -p`
+
+Runs through all modifications to existing files, and asks whether you want to stage each individual change. Useful if you've made multiple changes to files that should be split into separate commits. Doesn't automatically stage new files, moves, or deletions.
+
 ### `git status`
 
 Summarizes all changes to files on your hard drive since the last commit. Split into two categories: Staged (or "to be committed") and not staged.
 
 ### `git diff`
 
-Opens a line-by-line view of changes that defaults to comparing the staging area with the contents of your hard drive. Use `git diff HEAD` instead to compare all staged and unstaged changes with the most recent commit.
+Opens a line-by-line view of changes that defaults to comparing the staging area with the contents of your hard drive (use arrow keys to scroll and `q` to quit). Use `git diff HEAD` instead to compare all staged and unstaged changes with the most recent commit.
 
 ### `git rm <file_names>`
 
@@ -33,14 +41,6 @@ Deletes the specified files, and adds the deletions to the staging area. If you 
 ### `git mv <old_path> <new_path>`
 
 Moves or renames a file or directory just like `mv` does, but also records the move in the staging area. If you just used `mv`, the file/directory would be moved on your hard drive but the move would not be staged, so your next commit would still have the file/directory in its old location.
-
-### `git add -A`
-
-**Use very sparingly!** Syncs all changes from your hard drive to the staging area, including any new/moved/deleted files or directories. It's easy to create bad commits this way &ndash; use this only if you're positive that *all* of your current changes should go into the next commit.
-
-### `git add -p`
-
-Runs through all modifications to existing files, and asks whether you want to stage each individual change. The safer version of `git add -A`. Doesn't automatically stage new files, moves, or deletions.
 
 ### `git reset HEAD`
 
@@ -58,7 +58,7 @@ Records a new commit in the repository that contains all the changes currently i
 
 ### `git log`
 
-Shows a log of all commits on your current branch, most recent first. This includes the **SHA** or "hash" of each commit, which can be used with any command that accepts a reference to a specific commit, like `git diff` or `git reset`.
+Shows a log of all commits on your current branch, most recent first (as with `git diff`, use arrow keys to scroll and `q` to quit). This includes the **SHA** or "hash" of each commit, which can be used with any command that accepts a reference to a specific commit, like `git diff` or `git reset`.
 
 ### `git branch`
 
@@ -66,11 +66,11 @@ Shows all branches in your local repository.
 
 ### `git checkout -b <branch_name>`
 
-Creates a new branch with the specified name, and switches to it. The "branch point" will be the commit you were on when you performed the checkout. The new branch will not have any commits in it yet.
+Creates a new branch with the specified name, and switches to it. The "branch point" will be the commit you were on when you performed the checkout. The new branch will not have any commits in it yet. This cannot be done if you have any changes to files, staged or unstaged.
 
 ### `git checkout <branch_name>`
 
-Switches to an existing branch. This cannot be done if you have any changes to files, staged or unstaged &ndash; this also goes for `git checkout -b`.
+Switches to an existing branch. This cannot be done if you have any changes to files, staged or unstaged.
 
 ### `git merge <branch_name>`
 
@@ -78,9 +78,9 @@ Creates a "merge commit" that merges all of the changes in the specified branch 
 
 **Note:** If no new commits have been made to `master` since you branched from it, Git will not create a merge commit, because all it needs to do is scoot the `master` pointer up to the newest commit on your branch. This is called a "fast-forward" merge.
 
-### `git push <remote_name> <branch_name>`
+### `git push -u <remote_name> <branch_name>`
 
-Pushes any new commits in the specified branch to the specified remote. For instance, `git push origin master` will push any new commits in the `master` branch to your copy of the repo on GitHub.
+Pushes any new commits in the specified branch to the specified remote. For instance, `git push -u origin master` will push any new commits in the `master` branch to your copy of the repo on GitHub. After pushing a particular branch for the first time, you can use just `git push` as a shortcut.
 
 ### `git pull`
 
