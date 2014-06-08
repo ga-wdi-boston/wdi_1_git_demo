@@ -58,3 +58,18 @@
 * Add some favorite people to the file
 * Still need to stage those changes using `git add`
 * Finally, `git commit`
+
+### Make some new files/directories
+
+* `mkdir foods drinks`
+* `git status` can't see these? Git only knows about files, not directories
+* `touch foods/cheeses.md`, now we've got something
+* `touch foods/smoothies.md`
+* `touch drinks/teas.md`
+* `git add -A` and `git commit`
+
+### Move files to a different directory
+
+* Smoothies are more of a drink than a food, I think
+* Try to figure this out!
+* The answer: `git mv foods/smoothies.md drinks/`
