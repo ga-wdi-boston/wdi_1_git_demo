@@ -51,10 +51,7 @@
 
 ### Move/rename a file in the repo
 
-* `mv teachers.md people.md`
-* Git thinks we deleted a file, then added another unrelated file
-* `git mv teachers.md people.md`, but now it doesn't work since we already moved it
-* Move it back to its original name first, then do the `git mv`
+* `git mv teachers.md people.md`
 * Add some favorite people to the file
 * Still need to stage those changes using `git add`
 * Finally, `git commit`
@@ -63,13 +60,16 @@
 
 * `mkdir foods drinks`
 * `git status` can't see these? Git only knows about files, not directories
-* `touch foods/cheeses.md`, now we've got something
-* `touch foods/smoothies.md`
-* `touch drinks/teas.md`
-* `git add -A` and `git commit`
+* `touch foods/.keep`, empty marker file that typically used so Git knows about directories.
+* `touch drinks/.keep`
+* `git status` Know Git knows about these directories.
+* `git add -A`
+* `git commit -m "Added the foods and drinks directories."`
 
 ### Move files to a different directory
 
+* `touch food/smoothies.txt`, and add some smoothies to the file.
+* `git add food/smoothies.txt`, `git commit -m 'Added smoothies`
 * Smoothies are more of a drink than a food, I think
 * Try to figure this out!
 * The answer: `git mv foods/smoothies.md drinks/`
