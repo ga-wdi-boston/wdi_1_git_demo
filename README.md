@@ -6,11 +6,44 @@
 Follow along with the lecture &ndash; no need to do anything with this repo.
 
 ## Objectives
-
-* Create a new repository (repo) locally.
+* Understand why we need Source Control.
+* Create a new **LOCAL** Git repository(repo).
 * Become familiar with the [Git commands](command-reference.md), (init, add, commit, clone, etc.)
-* Submit a pull request.
 
+### Source Control
+
+Source Code Control is also known as Version Control System(VCS). Version control is **fundamental** to software development. It is **required** for all the reasons given below.
+
+### Git
+Git is one, of many, Version/Source Control System. Others are Mercurial, Subversion, CVS, etc.
+
+Git was created by Linus Torvalds, creator of Linux. Been around since 2005. But, became popular in Rails land about 2008.  
+
+The most popular, by far, VCS for the languages and technologies we're going to see.  
+
+## Why Use Source Code Control
+
+
+#### Backup and Restore. (git reset) 
+Files are saved as they are edited, and you can jump to any moment in time. Need that file as it was on Feb 23, 2013? No problem.  
+#### Synchronization. (git pull, git push )
+Lets people share files and stay up-to-date with the latest version.  
+#### Short-term undo. (git reset)
+Monkeying with a file and messed it up? Throw away your changes and go back to the “last known good” version in the database.  
+#### Long-term undo. (git reset)
+Sometimes we mess up bad. Suppose you made a change a year ago, and it had a bug. Jump back to the old version, and see what change was made that day.  
+#### Track Changes (git log)  
+As files are updated, you can leave messages explaining why the change happened (stored in the VCS, not the file). This makes it easy to see how a file is evolving over time, and why.  
+#### Track Ownership (git blame). 
+Tracks every change with the name of the person who made it. Helpful for blamestorming or giving credit.  
+#### Sandboxing  (git branch, git rebase, git merge)
+Insurance against yourself. Making a big change? You can make temporary changes in an isolated area, test and work out the kinks before “checking in” your changes.  
+#### Branching and merging. (git branch, git rebase, git merge)
+A larger sandbox. You can branch a copy of your code into a separate area and modify it in isolation (tracking changes separately). Later, you can merge your work back into the common area.
+
+## Demo
+
+Let's use Git. [Git Demo Steps](demo-steps.md)
 
 ## Best Practices
 

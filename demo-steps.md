@@ -1,7 +1,8 @@
 # Instructor Notes
 
 ### Initialize empty repo
-
+* Change into your code, or a temp, directory.  
+	`cd ~/tmp`
 * `mkdir favorite-things`
 * `cd favorite-things`
 * `git init`
@@ -12,19 +13,25 @@
 * `touch animals.txt`
 * `subl .`
 * Open the file using the sidebar or `Cmd+P`
-* Add a header and list some favorite animals
+* Add some favorite animals.
+* `git status` 
 * `git add animals.txt`
+* `git status` 
 * `git commit`
 * Write a good commit message! (see link in reference)
 * Save and close the tab to finish
+* `git status` 
 
 ### Now you try it
 
-* Commit two new files: Favorite cheeses, and favorite teachers
+* Create, Add and Commit two new files:  
+	Favorite cheeses, and favorite teachers. (cheeses.txt and teachers.txt).
+* `git status` 	
 
 ### When you're done...
 
 * A new trick: `git add -A` (see reference)
+* `git status` 
 
 ### Modify a file in the repo
 
