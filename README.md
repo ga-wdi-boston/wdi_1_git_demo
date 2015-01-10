@@ -8,7 +8,7 @@ Follow along with the lecture &ndash; no need to do anything with this repo.
 ## Objectives
 
 * Create a new repository (repo) locally.
-* Become familiar with the Git commands, (init, add, commit, clone, etc.)
+* Become familiar with the [Git commands](command-reference.md), (init, add, commit, clone, etc.)
 * Submit a pull request.
 
 
@@ -19,17 +19,17 @@ There are more best practices, but this will get you started.
 ### Only make one change per commit.
 Very difficult to find or revert a single change if they are mixed into others. You can spend endless hours pulling apart large commits that contain multiple changes.  
 
-** Commit early and often.**
+**Commit early and often**
 
 ### Make the whole change in one commit.  
-Also, makes it difficult to see what was changed to fix a bug or to create a feature.  
+Also, makes it difficult to see what was changed to fix a bug or to create a feature.
 
-** But don't commit too early or too often.**
+**But don't commit too early or too often**
 	
 ### Document what you have changed.  
 
-A good commit message tells the reader what part of the codebase was changed and how without them having to look at the code.
-	
+A good commit message tells the reader what part of the codebase was changed and how without them having to look at the code.  
+
 **Create good Commit messages**  
 	
 ### Document why you made the change.  
