@@ -9,6 +9,8 @@ Follow along with the lecture &ndash; no need to do anything with this repo.
 * Understand why we need Source Control.
 * Create a new **LOCAL** Git repository(repo).
 * Become familiar with the [Git commands](command-reference.md), (init, add, commit, clone, etc.)
+* Create a Github repo.
+
 
 ### Source Control
 
@@ -41,9 +43,13 @@ Insurance against yourself. Making a big change? You can make temporary changes 
 #### Branching and merging. (git branch, git rebase, git merge)
 A larger sandbox. You can branch a copy of your code into a separate area and modify it in isolation (tracking changes separately). Later, you can merge your work back into the common area.
 
-## Demo
+## Demo/Lab
 
 Let's use Git. [Git Demo Steps](demo-steps.md)
+
+## Demo/Lab
+
+Manage Git repository with Github. [Github](github_create.md)
 
 ## Best Practices
 
