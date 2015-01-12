@@ -45,7 +45,7 @@ A larger sandbox. You can branch a copy of your code into a separate area and mo
 
 ## Demo/Lab
 
-Let's use Git. [Git Demo Steps](demo-steps.md)
+Let's use Git. [Git Demo Steps](demo_steps.md)
 
 ## Demo/Lab
 
