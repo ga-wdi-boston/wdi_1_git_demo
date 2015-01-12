@@ -49,7 +49,10 @@ Let's use Git. [Git Demo Steps](demo-steps.md)
 
 ## Demo/Lab
 
-Manage Git repository with Github. [Github](github_create.md)
+Manage a remote Git repository with Github. [Github repo](github_create.md)
+
+## Demo/Lab
+Fork and clone a repo and make pull request. [Fork, Clone](fork_pull_req.md)
 
 ## Best Practices
 
