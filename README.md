@@ -9,7 +9,7 @@ Follow along with the lecture &ndash; no need to do anything with this repo.
 * Understand why we need Source Control.
 * Create a new **LOCAL** Git repository(repo).
 * Become familiar with the [Git commands](command-reference.md), (init, add, commit, clone, etc.)
-* Create a Github repo.
+* Create a remote Github repo that will be a total copy of the local repo.
 
 
 ### Source Control
