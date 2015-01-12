@@ -89,6 +89,7 @@ There's only one rule when it comes to committing commented-out code.
 * [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 * [What's in a Good Commit?](http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html)
 * Source Control movie [Download this](https://www.dropbox.com/s/qricsuvkdlc5sn1/jim_wierich_git.mov?dl=0)
+* [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
 
 
 Btw, Git and Linux creator has some strong opinions about [commit messages](https://github.com/torvalds/linux/pull/17#issuecomment-5659933)
